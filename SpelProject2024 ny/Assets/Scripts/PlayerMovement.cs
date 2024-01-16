@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
 
     private Rigidbody2D rb;
-    //private Animator animator;
+    public Animator animator;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     {
 
         float moveDirection = Input.GetAxis("Horizontal");
+        if(moveDirection == 0)
+            animator.SetBool("Walking", false);
+        else
+            animator.SetBool("Walking", true);
         Move(moveDirection);
         if (moveDirection > 0 && !isFacingRight)
         {
