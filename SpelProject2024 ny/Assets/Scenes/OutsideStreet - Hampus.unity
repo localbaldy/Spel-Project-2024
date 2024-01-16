@@ -247,7 +247,7 @@ Animator:
   m_GameObject: {fileID: 514754963}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1c4061eaec38a24b97fff74d559e18e, type: 2}
+  m_Controller: {fileID: 9100000, guid: b2e494c54080ffa42a3489b16c5852a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -293,8 +293,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 868043953
-  m_SortingLayer: -2
+  m_SortingLayerID: 421066201
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c8b43daf7976868489dae2c56e0c4d38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -695,8 +695,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 868043953
-  m_SortingLayer: -2
+  m_SortingLayerID: 421066201
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c8b43daf7976868489dae2c56e0c4d38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1095,7 +1095,7 @@ Animator:
   m_GameObject: {fileID: 1501004678}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1c4061eaec38a24b97fff74d559e18e, type: 2}
+  m_Controller: {fileID: 9100000, guid: b2e494c54080ffa42a3489b16c5852a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1141,8 +1141,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 868043953
-  m_SortingLayer: -2
+  m_SortingLayerID: 421066201
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c8b43daf7976868489dae2c56e0c4d38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1249,6 +1249,7 @@ GameObject:
   - component: {fileID: 1715357199}
   - component: {fileID: 1715357198}
   - component: {fileID: 1715357197}
+  - component: {fileID: 1715357201}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1368,6 +1369,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1715357201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715357196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1197120997448cf4e827c4498b463852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1968375273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,7 +1569,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.582291
+  orthographic size: 5.544509
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

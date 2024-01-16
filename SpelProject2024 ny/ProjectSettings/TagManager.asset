@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -39,15 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Bakgrund
-    uniqueID: 868043953
-    locked: 0
-  - name: saker bakom
-    uniqueID: 811085423
+  - name: BackGround
+    uniqueID: 421066201
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: "saker framf\xF6r"
-    uniqueID: 894208099
     locked: 0
