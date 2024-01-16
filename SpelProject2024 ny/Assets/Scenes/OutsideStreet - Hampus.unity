@@ -247,7 +247,7 @@ Animator:
   m_GameObject: {fileID: 514754963}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b2e494c54080ffa42a3489b16c5852a3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4dcb594707eb1cb46b65291ce8e830c4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1095,7 +1095,7 @@ Animator:
   m_GameObject: {fileID: 1501004678}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b2e494c54080ffa42a3489b16c5852a3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4dcb594707eb1cb46b65291ce8e830c4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1352,7 +1352,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1715357200
@@ -1569,7 +1569,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.544509
+  orthographic size: 16.132473
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

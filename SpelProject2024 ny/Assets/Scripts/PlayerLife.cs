@@ -16,7 +16,7 @@ public class PlayerLife : MonoBehaviour
     }
     private void Die() // Spela death animationen och sätt rigidbody på static så vi inte kan röra oss
     {
-        //animator.SetTrigger("Death");
+        animator.SetTrigger("Death");
         //rb.bodyType = RigidbodyType2D.Static;
         Debug.Log("dead");
     }
