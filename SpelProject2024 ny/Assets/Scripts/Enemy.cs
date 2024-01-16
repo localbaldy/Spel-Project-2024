@@ -12,10 +12,13 @@ public class Enemy : MonoBehaviour
     private Transform target; // referens till spelaren
     private bool isChasing = false; // flagga för att indikera om fienden jagar eller inte
     public float moveSpeed = 5f;
+    private Vector3 originalScale;
+    private bool IsBlinking = false;
+
     public void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform; // söker efter spelaren i scenen baserat på taggen
-        
+        originalScale = transform.localScale; // Spara den ursprungliga skalan
     }
     private void Update()
     {
@@ -46,13 +49,42 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
-        Debug.Log("Enemy Health: " + health);
-        if (health <= 0)
-        {
-            Die();
-        }
+        //if (!IsBlinking)
+        //{
+            health -= damage;
+            //StartCoroutine(BlinkRed()); // Starta koroutinen för att få objektet att blinka rött
+            Debug.Log("Enemy Health: " + health);
+            if (health <= 0)
+            {
+                Die();
+            }
+        //}
+
     }
+
+    /*IEnumerator BlinkRed()
+    {
+        isBlinking = true;
+
+        float blinkDuration = 0.1f;
+        float blinkSpeed = 10f;
+        Material material = GetComponent<Renderer>().material;
+
+        float timePassed = 0f;
+        while (timePassed < blinkDuration)
+        {
+            float scaleFactor = Mathf.Sin(Time.time * blinkSpeed) * 0.5f + 0.5f;
+            Color lerpedColor = Color.Lerp(Color.white, Color.red, scaleFactor);
+            material.color = lerpedColor;
+
+            timePassed += Time.deltaTime;
+            yield return null;
+        }
+
+        // Reset the color to original after blinking
+        material.color = Color.white;
+        isBlinking = false;
+    }*/
 
     void Die()
     {
