@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 8138857}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,7 +610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f25d61a4c720d4f8e654772bb06049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 1579595091}
   bulletPrefab: {fileID: 7139439069102514065, guid: c1cdcdfb72ed0d243a18e712f90327a1, type: 3}
 --- !u!1 &1322313875
 GameObject:
@@ -667,7 +666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579595090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.49, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1173712091}
@@ -684,11 +683,11 @@ GameObject:
   - component: {fileID: 1586145739}
   - component: {fileID: 1586145743}
   - component: {fileID: 1586145742}
-  - component: {fileID: 1586145741}
   - component: {fileID: 1586145740}
+  - component: {fileID: 1586145741}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -701,7 +700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586145738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.48970175}
+  m_LocalPosition: {x: 0, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8138857}
@@ -720,6 +719,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  chaseRadius: 10
+  obstacleCheckDistance: 1
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  animator: {fileID: 0}
+  moveSpeed: 1
 --- !u!50 &1586145741
 Rigidbody2D:
   serializedVersion: 4
@@ -740,7 +746,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!61 &1586145742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -751,7 +757,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

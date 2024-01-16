@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Weapon : MonoBehaviour
 {
-    public Transform firePoint;
+    private Transform FirePoint;
     public GameObject bulletPrefab;
+    void Start()
+    {
+        FirePoint = GameObject.Find("FirePoint").transform;
+    }
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("SHOOTI");
+         
             Shoot();
         }
     }
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
     }
 }
