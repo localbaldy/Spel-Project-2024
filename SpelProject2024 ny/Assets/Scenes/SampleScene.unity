@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 1173712089}
   - component: {fileID: 1173712088}
   - component: {fileID: 1173712092}
+  - component: {fileID: 1173712093}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -611,6 +612,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7139439069102514065, guid: c1cdcdfb72ed0d243a18e712f90327a1, type: 3}
+--- !u!114 &1173712093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173712087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e38fa1d527b04d4588c05e521897da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  rb: {fileID: 1173712090}
 --- !u!1 &1322313875
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +740,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   animator: {fileID: 0}
-  moveSpeed: 1
+  moveSpeed: 2
 --- !u!50 &1586145741
 Rigidbody2D:
   serializedVersion: 4
@@ -746,7 +761,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
+  m_Constraints: 0
 --- !u!61 &1586145742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -757,7 +772,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
