@@ -5,16 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Start Menu.unity
     guid: 8a6a7845cfd2e1140bd68dbd91b04d02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Level 1.unity
     guid: 08da32eb0509897479263869056615b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Level 2.unity
     guid: 369be1ebd2f50b846a7f19afdb24daaf
+  - enabled: 1
+    path: Assets/Scenes/HospitalRoom - Hampus 1.unity
+    guid: d5763e03b6dd15b428ecc2fda843e271
+  - enabled: 1
+    path: Assets/Scenes/HospitalCorridor.unity
+    guid: 5359afc62eeec084fb05d887b91f5fc6
+  - enabled: 1
+    path: Assets/Scenes/OutsideStreet - Hampus.unity
+    guid: 8834cf0ed71d8af46bf6e1353bd96b45
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 6210af99e09a83e4281a7b31613604a2
   m_configObjects: {}
