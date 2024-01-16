@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     private float shootCooldown = 1.5f;  // Cooldown time in seconds
     private bool canShoot = true;
+    public Animator animator;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && canShoot)
         {
+            animator.SetTrigger("Shoot");
             Shoot();
             StartCoroutine(ShootCooldown());
         }

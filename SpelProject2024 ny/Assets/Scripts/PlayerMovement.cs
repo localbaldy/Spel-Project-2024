@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-
+        //animator.SetBool("GunEquipped", true);
         float moveDirection = Input.GetAxis("Horizontal");
         if(moveDirection == 0)
             animator.SetBool("Walking", false);
