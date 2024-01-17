@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 814947189}
   m_Layer: 0
   m_Name: HospitalEntrance
-  m_TagString: Untagged
+  m_TagString: PreviousLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 1249478876}
   m_Layer: 0
   m_Name: HouseDoor
-  m_TagString: Untagged
+  m_TagString: NextLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1382,9 +1382,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  footstepSound: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
+  animator: {fileID: 0}
 --- !u!1 &1968375273
 GameObject:
   m_ObjectHideFlags: 0
