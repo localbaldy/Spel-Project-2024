@@ -9,7 +9,6 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     private float shootCooldown = 1.5f;  // Cooldown time in seconds
     private bool canShoot = true;
-    private bool ShotgunEquipped = false;
     public Animator animator;
 
     void Start()
@@ -19,20 +18,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("EquipGun"))
-        {
-            ShotgunEquipped = true;
-            animator.SetBool("GunEquipped", true);
-        }
-        if (Input.GetButtonDown("UnEquipGun"))
-        {
-            ShotgunEquipped = false;
-            animator.SetBool("GunEquipped", false);
-        }
-            
-
-
-        if (Input.GetButtonDown("Fire1") && canShoot && ShotgunEquipped)
+        if (Input.GetButtonDown("Fire1") && canShoot)
         {
             animator.SetTrigger("Shoot");
             Shoot();

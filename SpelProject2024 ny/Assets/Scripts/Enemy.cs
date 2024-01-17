@@ -13,7 +13,8 @@ public class Enemy : MonoBehaviour
     private bool isChasing = false; // flagga för att indikera om fienden jagar eller inte
     public float moveSpeed = 5f;
     private Vector3 originalScale;
-    private bool IsBlinking = false;
+    
+    [SerializeField] private AudioSource WomenMonsterScream;
 
     public void Start()
     {
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius) // kollar om spelaren är inom radie
         {
             isChasing = true;
+            
         }
         else
         {
@@ -32,6 +34,7 @@ public class Enemy : MonoBehaviour
         }
         if (isChasing)
         {
+            
             // kolla om det finns hinder framför fienden med OverlapBox
             Vector2 direction = (target.position - transform.position).normalized;
             Vector2 boxSize = new Vector2(1f, 1f); // storleken på boxen som fienden ska kolla i
@@ -44,47 +47,28 @@ public class Enemy : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
             }
         }
+
+
     }
 
 
     public void TakeDamage(int damage)
     {
-        //if (!IsBlinking)
-        //{
-            health -= damage;
-            //StartCoroutine(BlinkRed()); // Starta koroutinen för att få objektet att blinka rött
-            Debug.Log("Enemy Health: " + health);
-            if (health <= 0)
-            {
-                Die();
-            }
-        //}
+        health -= damage;
+        WomenMonsterScream.Play();
 
-    }
-
-    /*IEnumerator BlinkRed()
-    {
-        isBlinking = true;
-
-        float blinkDuration = 0.1f;
-        float blinkSpeed = 10f;
-        Material material = GetComponent<Renderer>().material;
-
-        float timePassed = 0f;
-        while (timePassed < blinkDuration)
+        Debug.Log("Enemy Health: " + health);
+        if (health <= 0)
         {
-            float scaleFactor = Mathf.Sin(Time.time * blinkSpeed) * 0.5f + 0.5f;
-            Color lerpedColor = Color.Lerp(Color.white, Color.red, scaleFactor);
-            material.color = lerpedColor;
-
-            timePassed += Time.deltaTime;
-            yield return null;
+            Die();
         }
+    }
+          
+      
 
-        // Reset the color to original after blinking
-        material.color = Color.white;
-        isBlinking = false;
-    }*/
+    
+
+   
 
     void Die()
     {
