@@ -6,25 +6,26 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-
+    [SerializeField] private AudioSource footstepSound;
     public LayerMask groundLayer;
     private bool isFacingRight = true;
 
     private Rigidbody2D rb;
-    public Animator animator;
+    //public Animator animator;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         //animator = GetComponent<Animator>();
+        
     }
     private void Update()
     {
         //animator.SetBool("GunEquipped", true);
         float moveDirection = Input.GetAxis("Horizontal");
-        if(moveDirection == 0)
+        /*if(moveDirection == 0)
             animator.SetBool("Walking", false);
         else
-            animator.SetBool("Walking", true);
+            animator.SetBool("Walking", true);*/
         Move(moveDirection);
         if (moveDirection > 0 && !isFacingRight)
         {
@@ -34,14 +35,28 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+        if (moveDirection > 0.1f && !footstepSound.isPlaying)
+        {
+            footstepSound.Play();
+        }
+        else if (moveDirection < 0.1f && !footstepSound.isPlaying)
+        {
+            footstepSound.Play();
+        }
+        else if (moveDirection == 0f && footstepSound.isPlaying)
+        {
+            footstepSound.Stop();
+        }
 
     }
     private void Move(float direction)
     {
+        
         Vector2 movement = new Vector2(direction * moveSpeed, rb.velocity.y);
         rb.velocity = movement;
         float absoluteSpeed = Mathf.Abs(direction * moveSpeed);
         //animator.SetFloat("Speed", absoluteSpeed);
+        
     }
 
     private void Flip()

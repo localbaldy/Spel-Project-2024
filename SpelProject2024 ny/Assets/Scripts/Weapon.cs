@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+
+    [SerializeField] private AudioSource shootSoundEffect;
     private Transform FirePoint;
     public GameObject bulletPrefab;
     private float shootCooldown = 1.5f;  // Cooldown time in seconds
@@ -20,6 +22,7 @@ public class Weapon : MonoBehaviour
         {
             animator.SetTrigger("Shoot");
             Shoot();
+            shootSoundEffect.Play();
             StartCoroutine(ShootCooldown());
         }
     }
