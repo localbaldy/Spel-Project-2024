@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public float moveSpeed = 5f;
     private Vector3 originalScale;
     private bool IsBlinking = false;
+    [SerializeField] private AudioSource MonsterScream;
 
     public void Start()
     {
@@ -52,7 +53,7 @@ public class Enemy : MonoBehaviour
         //if (!IsBlinking)
         //{
             health -= damage;
-            //StartCoroutine(BlinkRed()); // Starta koroutinen för att få objektet att blinka rött
+            MonsterScream.Play();
             Debug.Log("Enemy Health: " + health);
             if (health <= 0)
             {
