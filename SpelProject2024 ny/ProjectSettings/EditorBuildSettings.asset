@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 6210af99e09a83e4281a7b31613604a2
+  - enabled: 1
+    path: Assets/Scenes/Hostpital room part 2.unity
+    guid: 50a15d37906939046b1597cd805bb4ca
+  - enabled: 1
+    path: Assets/Scenes/HospitalCorridor part 2.unity
+    guid: 61f17ec2790bcb747a2bf4f13bc0c7c0
+  - enabled: 1
+    path: Assets/Scenes/OutsideStreet part 2.unity
+    guid: ac3e62187cf7a3b408326a261c205e05
   m_configObjects: {}
