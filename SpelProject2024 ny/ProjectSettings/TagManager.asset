@@ -14,7 +14,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - "framf\xF6ra allt fyfan"
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: "Framf\xF6\xE4r allt fyfan"
+    uniqueID: 3592796295
     locked: 0
