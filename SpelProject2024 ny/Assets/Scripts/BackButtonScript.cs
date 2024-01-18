@@ -11,4 +11,9 @@ public class BackButtonScript : MonoBehaviour
 	SceneManager.LoadScene(0);
 }
 
+public void BackFromCredits()
+{
+    SceneManager.LoadScene(9);
+}
+
 }

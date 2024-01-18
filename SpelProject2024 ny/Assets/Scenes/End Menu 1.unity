@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 95124129}
         m_TargetAssemblyTypeName: BackButtonScript, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: BackFromCredits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
