@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 30.000008}
-  m_SizeDelta: {x: 320, y: 60}
+  m_AnchoredPosition: {x: 0, y: 20.5}
+  m_SizeDelta: {x: 320, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996611506
 MonoBehaviour:
@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7fe3aa4d8c3b740408ebcd7affc5e49b, type: 3}
-    m_FontSize: 40
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -193,7 +193,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'A - Move Left
+
+    D - Move Right
+
+    W - Enter Doors
+
+    E - Shoot
+    Weapon
+
+    X - Equip Weapon
+
+    Z - Unequip Weapon'
 --- !u!222 &996611507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -535,7 +546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start Game
+  m_Text: Back
 --- !u!222 &1687018553
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -629,7 +640,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1990895794}
-        m_TargetAssemblyTypeName: StartMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: BackButtonScript, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -687,7 +698,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1990895789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 007096ab13551184bb539f6bdc3a274a, type: 3}
+  m_Script: {fileID: 11500000, guid: e406f6efce83c3e4c850091aadbb934b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2049618091
