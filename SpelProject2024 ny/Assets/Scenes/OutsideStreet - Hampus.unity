@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442342461833468699, guid: 7a3dd0a26b07d2847aead4bd39642385, type: 3}
       propertyPath: m_Name
-      value: Enemy (2)
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3dd0a26b07d2847aead4bd39642385, type: 3}
@@ -418,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 442342461833468699, guid: 7a3dd0a26b07d2847aead4bd39642385, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3dd0a26b07d2847aead4bd39642385, type: 3}
@@ -710,6 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3dd0a26b07d2847aead4bd39642385, type: 3}
+<<<<<<< Updated upstream
 --- !u!1 &1145658095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 442342461833468699, guid: 7a3dd0a26b07d2847aead4bd39642385, type: 3}
@@ -810,6 +811,8 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 9143174860224394221, guid: 5b454f853d010f04881027edd843e6ee, type: 3}
   m_PrefabInstance: {fileID: 1155163453}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1165576390
 GameObject:
   m_ObjectHideFlags: 0
