@@ -16,12 +16,13 @@ public class PlayerLife : MonoBehaviour
     }
     private void Die() // Spela death animationen och sätt rigidbody på static så vi inte kan röra oss
     {
-        animator.SetTrigger("Death");
-        //rb.bodyType = RigidbodyType2D.Static;
+        //animator.SetTrigger("Death");
+        rb.bodyType = RigidbodyType2D.Static;
         Debug.Log("dead");
+        RestartLevel();
     }
     private void RestartLevel() // Starta om scenen när vi dör
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

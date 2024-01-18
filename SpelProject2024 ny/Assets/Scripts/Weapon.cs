@@ -34,6 +34,7 @@ public class Weapon : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && canShoot && ShotgunEquipped)
         {
+            
             animator.SetTrigger("Shoot");
             Shoot();
             shootSoundEffect.Play();
