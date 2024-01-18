@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckForEnemyInScene : MonoBehaviour
 {
     public Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,11 @@ public class CheckForEnemyInScene : MonoBehaviour
     void Update()
     {
         if (GameObject.Find("Enemy") != null)
+        {
+
             animator.SetBool("EnemyInScene", true);
+            
+        }
         else
             animator.SetBool("EnemyInScene", false);
     }

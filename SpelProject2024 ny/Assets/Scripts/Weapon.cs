@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     private bool canShoot = true;
     private bool ShotgunEquipped = false;
     public Animator animator;
+    [SerializeField] private AudioSource ReloadSound;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class Weapon : MonoBehaviour
         {
             ShotgunEquipped = true;
             animator.SetBool("GunEquipped", true);
+            ReloadSound.Play();
         }
         if (Input.GetButtonDown("UnEquipGun"))
         {
