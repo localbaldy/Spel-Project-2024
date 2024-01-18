@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 94641538}
   m_Layer: 0
   m_Name: HospitalEntrance
-  m_TagString: Untagged
+  m_TagString: PreviousLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 223722308}
   - component: {fileID: 223722307}
   m_Layer: 0
-  m_Name: IMG_0729
+  m_Name: Backgound1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 537081957}
   - component: {fileID: 537081956}
   m_Layer: 0
-  m_Name: IMG_0729 (2)
+  m_Name: Backgound3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,11 +1157,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4117788752831854915, guid: e0439e4773d8747448152dab49dc0923, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -0.3
+=======
+      value: -1.44
+>>>>>>> 57fb227f4cd06241148720cd5962ed2e038cc615
       objectReference: {fileID: 0}
     - target: {fileID: 4117788752831854915, guid: e0439e4773d8747448152dab49dc0923, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.2148345
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 4117788752831854915, guid: e0439e4773d8747448152dab49dc0923, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1702,7 +1706,7 @@ GameObject:
   - component: {fileID: 1898290148}
   - component: {fileID: 1898290147}
   m_Layer: 0
-  m_Name: IMG_0729 (1)
+  m_Name: Backgound2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1806,7 +1810,7 @@ GameObject:
   - component: {fileID: 1943899781}
   m_Layer: 0
   m_Name: HouseDoor
-  m_TagString: Untagged
+  m_TagString: NextLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
