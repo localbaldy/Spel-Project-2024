@@ -843,12 +843,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6465371077339925940, guid: d98699e53a2294146bd0249b51648baa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9488651
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465371077339925940, guid: d98699e53a2294146bd0249b51648baa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.24187
       objectReference: {fileID: 0}
     - target: {fileID: 6465371077339925940, guid: d98699e53a2294146bd0249b51648baa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5845958
+      value: -0.2673
       objectReference: {fileID: 0}
     - target: {fileID: 6465371077339925940, guid: d98699e53a2294146bd0249b51648baa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -885,6 +889,22 @@ PrefabInstance:
     - target: {fileID: 6465371077339925942, guid: d98699e53a2294146bd0249b51648baa, type: 3}
       propertyPath: m_Name
       value: closed-door-wall-black-white-260nw-1528863929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465371077491637178, guid: d98699e53a2294146bd0249b51648baa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 14.643699
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465371077491637178, guid: d98699e53a2294146bd0249b51648baa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3884
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465371077491637178, guid: d98699e53a2294146bd0249b51648baa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1934
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465371077491637178, guid: d98699e53a2294146bd0249b51648baa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.0954
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d98699e53a2294146bd0249b51648baa, type: 3}
@@ -2420,7 +2440,7 @@ Transform:
   - {fileID: 523822141}
   - {fileID: 251665348}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2125760962
 GameObject:
