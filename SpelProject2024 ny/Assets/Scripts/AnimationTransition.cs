@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class AnimationTransition : MonoBehaviour
 {
-        // Start is called before the first frame update
+    [SerializeField] private AudioSource Panga;
+    // Start is called before the first frame update
     public void StartGame()
 {
 	SceneManager.LoadScene(11);
 }
+
+ public void Pang()
+    {
+        Panga.Play();
+    }
 
 public void StartGame1()
 {

@@ -763,9 +763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5bdd2fc8d5d0a40b69cff117ffaea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeFlash: 5
-  flashDuration: 0.5
-  darkDuration: 1
 --- !u!50 &1038788171
 Rigidbody2D:
   serializedVersion: 4
