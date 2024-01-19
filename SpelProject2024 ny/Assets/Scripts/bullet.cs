@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class bullet : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 30f;
     public int damage = 40;
     public Rigidbody2D rb;
     void Start()
