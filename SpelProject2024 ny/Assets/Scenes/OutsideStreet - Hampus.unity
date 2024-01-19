@@ -146,6 +146,14 @@ PrefabInstance:
       propertyPath: shootSoundEffect
       value: 
       objectReference: {fileID: 1036641147}
+    - target: {fileID: 4016390038088356911, guid: e0439e4773d8747448152dab49dc0923, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016390038088356911, guid: e0439e4773d8747448152dab49dc0923, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.78
+      objectReference: {fileID: 0}
     - target: {fileID: 4117788752831854915, guid: e0439e4773d8747448152dab49dc0923, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1525,7 +1533,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7499de1d958bdea43adc179e2ec3deb2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
