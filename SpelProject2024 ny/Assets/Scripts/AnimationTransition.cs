@@ -12,14 +12,13 @@ public class AnimationTransition : MonoBehaviour
 	SceneManager.LoadScene(11);
 }
 
- public void Pang()
-    {
-        Panga.Play();
-    }
-
 public void StartGame1()
 {
 	SceneManager.LoadScene(6);
 }
 
+public void Pang()
+{
+    Panga.Play();
+}
 }
