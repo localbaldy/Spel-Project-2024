@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     private bool isChasing = false; // flagga för att indikera om fienden jagar eller inte
     public float moveSpeed = 5f;
     private Vector3 originalScale;
-    private bool IsBlinking = false;
+    //private bool IsBlinking = false;
     [SerializeField] private AudioSource MonsterScream;
 
     public void Start()
