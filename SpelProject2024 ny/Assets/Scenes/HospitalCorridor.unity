@@ -753,6 +753,10 @@ PrefabInstance:
       propertyPath: shootSoundEffect
       value: 
       objectReference: {fileID: 571164983}
+    - target: {fileID: 4016390038088356911, guid: e0439e4773d8747448152dab49dc0923, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4117788752831854915, guid: e0439e4773d8747448152dab49dc0923, type: 3}
       propertyPath: m_RootOrder
       value: 4
