@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Home.unity
     guid: 6210af99e09a83e4281a7b31613604a2
   - enabled: 1
+    path: Assets/Scenes/Flashscreen 1.unity
+    guid: bbe50dbd264801048928e7b96eb27bbf
+  - enabled: 1
     path: Assets/Scenes/Hostpital room part 2.unity
     guid: 50a15d37906939046b1597cd805bb4ca
   - enabled: 1
