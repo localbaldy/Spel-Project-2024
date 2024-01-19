@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("EquipGun"))
+        if (Input.GetButtonDown("EquipGun") && !ShotgunEquipped)
         {
             ShotgunEquipped = true;
             animator.SetBool("GunEquipped", true);
