@@ -1820,7 +1820,7 @@ GameObject:
   - component: {fileID: 2065101000}
   m_Layer: 0
   m_Name: "D\xF6rr"
-  m_TagString: NextLevel
+  m_TagString: NextLevelDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

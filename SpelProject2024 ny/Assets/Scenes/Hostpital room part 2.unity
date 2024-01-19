@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 25598149}
   m_Layer: 0
   m_Name: "D\xF6rr"
-  m_TagString: NextLevel
+  m_TagString: NextLevelDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,8 +149,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25598147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.58, y: 11.9939, z: 0}
-  m_LocalScale: {x: 2.1812584, y: 4.168, z: 1}
+  m_LocalPosition: {x: 6.4762, y: 11.9939, z: 0}
+  m_LocalScale: {x: 1.9736027, y: 4.168, z: 1}
   m_Children: []
   m_Father: {fileID: 402941519}
   m_RootOrder: 4
@@ -905,6 +905,7 @@ MonoBehaviour:
   shootSoundEffect: {fileID: 1762660361}
   bulletPrefab: {fileID: 7139439069102514065, guid: c1cdcdfb72ed0d243a18e712f90327a1, type: 3}
   animator: {fileID: 255026014}
+  ReloadSound: {fileID: 0}
 --- !u!114 &825987472
 MonoBehaviour:
   m_ObjectHideFlags: 0

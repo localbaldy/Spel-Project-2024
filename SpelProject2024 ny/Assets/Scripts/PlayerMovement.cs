@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     public Animator animator;
+    private bool AtDoor = false;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
         {
             footstepSound.Stop();
         }
-
+        if (AtDoor && Input.GetAxis("Vertical") > 0)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     private void Move(float direction)
     {
@@ -74,7 +76,12 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else if (collision.tag == "PreviousLevel")
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        else if (collision.tag == "NextLevelDoor")
+            AtDoor = true;
     }
 
-
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        AtDoor = false;
+    }
 }
